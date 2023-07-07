@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>GhBox</title>
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+	<!-- Theme Style -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<!--Technologies-->
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/newtech.css"/>
+
+	<!-- Responsive -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+	<!-- Colors -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+	<!-- Animation Style -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+	<!-- Favicon and touch icons  -->
+	<link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+	<link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+	<link href="images/new/logo2.png" rel="shortcut icon">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+
+	<style>
+		.kkb {
+			animation-duration: 4s;
+		}
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+			background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 3s;
+			animation-name: fade;
+			animation-duration: 3s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+			.prev, .next,.text {font-size: 11px}
+		}
+		.buttons{
+   		 text-align: center;
+		 padding-bottom: 10px;
+
+		}
+		.last{
+    	text-align: center;
+		}
+	</style>
+</head>
+<body class="header-sticky">
+	<section class="loading-overlay">
+		<div class="Loading-Page">
+			<h2 class="loader">Loading...</h2>
+		</div>
+	</section>
+
+
+	<div class="site-brand">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="logo" class="logo">
+						<a href="index.html" rel="home" style="font-size: 25px">
+							<img src="" alt="logo here" style="margin-top: 2 0px;height: 100px;">
+						</a>
+					</div><!-- /.logo -->
+					<div class="header-widgets">
+						<div id="text-1" class="widget widget_text">
+							<div class="textwidget">
+								<br>
+								<div class="info-icon">
+									<i class="icon-call-out icons"></i>
+									<div class="content">Call Us Now
+										<br>
+										<span>+233 202 202 020</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="text-2" class="widget widget_text">
+							<div class="textwidget">
+								<br>
+								<div class="info-icon">
+										<i class="icon-clock icons"></i>
+										<div class="content">Opening times
+										<br>
+										<span>Mon - Fri: 7:30 - 18:00</span></div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.header-widget -->
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.site-brand -->
+
+	<!-- Header -->
+	<header id="header" class="header clearfix">
+		<div class="header-wrap clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="nav-wrap">
+							<div class="btn-menu">
+								<span></span>
+							</div><!-- /mobile menu button -->
+							<nav id="mainnav" class="mainnav">
+								<ul class="menu">
+									<li class="home">
+										<a href="//a-mole.com" target="_blank">Home</a>
+									</li>
+									<li class="has-children"><a href="#">Digital Advertising</a>
+										<ul class="submenu">
+											<li><a href="#OurTeam">Social Media Management</a></li>
+										</ul><!-- /.submenu -->
+									</li> 
+									<li class="has-children"><a href="#products">Printing and Branding</a>
+										<ul class="submenu">
+											<li><a href="https://easybalance.net">Graphic Design Services</a></li>
+											<li><a href="https://ed-master.net">Promotional Products</a></li>
+											<li><a href="https://ed-master.net">Branding</a></li>
+											<li><a href="https://ed-master.net">Logos</a></li>
+											<li><a href="https://ed-master.net">Digital Media</a></li>
+										</ul><!-- /.submenu -->
+									</li>
+									<li class="has-children"><a href="#services">Messaging System</a>
+										<ul class="submenu">
+											<li><a href="#website">CRM Software</a></li>
+											<li><a href="#application">Bulk SMS System</a></li>
+										</ul><!-- /.submenu -->
+									</li>
+								</ul><!-- /.menu -->
+								<div class="social-links">
+									<a href="https://www.facebook.com/softnage" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="https://www.twitter.com/softnage" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="https://www.linkedin.com/company/softnage" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</div>
+							</nav><!-- /.mainnav -->
+						</div><!-- /.nav-wrap -->
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.header-wrap -->
+	</header><!-- /.header -->
+
+	<!-- Slider -->
+	<div class="tp-banner-container">
+		<div class="tp-banner">
+			<ul>
+				<li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+					<img src="images/new/slider-2.jpg" alt="slider-image" />
+					<div class="tp-caption sfl title-slide center" data-x="30" data-y="147" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">
+						<p style="font-size: 30px;"> Providing Effective Branding and Marketing <br>
+					</div>
+					<div class="tp-caption sfr desc-slide center" data-x="30" data-y="249" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+						<p style="font-size:25px ">Advertising &amp; Marketing<br>
+						</p>
+					</div>
+
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Flat imagebox -->
+	<section class="flat-row flat-imagebox pad-bottom20px kkb animated bounceInDown">
+
+	<section class="Agency">
+		<div class="container">
+				<div class="content">
+					<h1 style="text-align: center;">The Marketing Agency Your Whole
+						Business will love</h1>
+					<p style="text-align: center;" > We make it easy for you to prove Marketing performance.GhBox is the full-service agency known to drive and convert quality traffic, so you continuously hit - even surpass - your revenue goals. </p>
+				</div>
+
+
+			<div class="row1">
+				<div class="col-md-4" data-timeout="400">
+					<div class="panel1" style="margin: 5px; padding: 5px;">
+						<div class="panel-body">
+							<img src="images/new/digital-marketing-icon.png" alt="Digital icon here " style="width: 411.85px; height: 180px;">
+							<h5 style="text-align: center; color:#17054f;">Digital Marketing Services</h5>
+							<br>
+							<p></p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-4" data-timeout="400">
+					<div class="panel1" style="margin: 5px; padding: 5px;">
+						<div class="panel-body">
+							<img src="images/new/branding-services-png.png" alt="branding icon here" style="width: 411.85px; height: 180px;">
+							<h5 style="text-align: center; color:#17054f;">Branding Services</h5>
+							<br>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4" data-timeout="400">
+					<div class="panel1" style="margin: 5px; padding: 5px;">
+						<div class="panel-body">
+							<img src="images/new/messaging-systems-icon.png" alt="messaging system icon here " style="width: 411.85px; height: 180px;">
+							<h5 style="text-align: center; color:#17054f;">Messaging Services</h5>
+							<br>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+	</section>
+
+	<div class="flat-divider d40px"></div>
+
+	<section class="flat-row pad-bottom40px animated slideInRight" style="background-color: #b7b7b7;">
+		<div class="services">
+				<div class="container">
+					<div class="wrapper">
+								<h2 style="text-align: center; color: #260556; padding-bottom: 10px;">Our Services</h2>
+								<p style="text-align: center; color: #333333; padding-bottom: 20px;">
+									GhBox has a team of specialized marketing experts in areas like ecommerce, pay-per-click, search engine optimization, lead generation, conversion rate optimization, and performance marketing. Our goal is to deliver the desired results to our clients. We prioritize meaningful data to inform our decisions and constantly test, tweak, and optimize our strategies. We strive to seize every opportunity for success.
+								</p>
+								<ul>
+					
+						<div class="wrapper">
+							<div class="box">
+								<li>
+								<img src="images/new/s-e-o.png" alt="icon-1" loading="lazy"  decoding="async" fetchpriority="low" style= "margin-left: 326px; margin-top: auto; margin-bottom: auto;" />
+								<h3 style="text-align:center; color: #260556; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Search Engine Optimization</h3>
+								<p style="text-align: center; color: #333333; width: 600px; height: 100px; margin-left: auto; margin-right: auto;">Our expert SEO team and content writers will create a conversion-driven digital marketing strategy based on our years’ of experience in SEO consultancy and strategy implementation.</p>
+								<div class="buttons">
+								<a href="#" class="button" style="text-align: center; padding-bottom: 20px; "> Learn more<i></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrapper">
+							<div class="box">
+								</li>
+								<li>
+								<img src="images/new/google-social-advertising.png" alt="icon-1" loading="lazy"  decoding="async" fetchpriority="low" style= "margin-left: 326px;  margin-top: auto; margin-bottom: auto;" />
+								<h3 style="text-align: center; color: #260556; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Google and Social  Media Advertising</h3>
+								<p style="text-align:center; color: #333333; padding-bottom: 10px; width: 600px; height: 100px; margin-left: auto; margin-right: auto;">Trust our Google Premier Partner marketing experts to build a custom PPC campaign such as a Google or Facebook ads strategy designed to achieve your business’ goals and desired outcomes.</p>
+								<div class="buttons">
+								<a href="#" class="button" style="text-align: center; padding-bottom: 20px; "> Learn more<i></i></a>
+								</div>
+								</li>
+							</div>
+						</div>	
+
+						<div class="wrapper">
+							<div class="box">
+								<li>
+								<img src="images/new/conversion-rate.png" alt="icon-1" loading="lazy" width="370" height="345" decoding="async" fetchpriority="low" style= "margin-left: 326px; margin-top: auto; margin-bottom: auto;" />
+								<h3 style="text-align: center; color: #260556; padding-bottom: 10px; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Conversion Rate Optimization</h3>
+								<p  style="text-align: center; color: #333333; width: 700px; height: 70px; margin-left: auto; margin-right: auto;">Our CRO strategists will effectively maximize your conversion rates to provide a better user experience thanks to our unparalleled customer research and skilled team members.</p>
+								<div class="buttons">
+								<a href="#" class="button" style="text-align: center; padding-bottom: 20px; "> Learn more<i></i></a>
+								</div>
+								</li>
+							</div>
+						</div>
+								
+						<div class="wrapper">
+							<div class="box">
+								<li>
+								<img src="images/new/customer-relations-services.png" alt="icon-1" loading="lazy" width="370" height="345" decoding="async" fetchpriority="low" style= "margin-left: 326px; margin-top: auto; margin-bottom: auto;"/>
+								<h3 style="text-align: center; color: #260556; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Customer Relation Services</h3>
+								<p  style="text-align: center; color: #333333; width: 700px; height: 70px; margin-left: auto; margin-right: auto;"">GhBox of customer relation experts work with your business to find, nurture, and convert qualified leads.</p>
+								<div class="buttons">
+									<a href="#" class="button" style="text-align: center; padding-bottom: 20px; "> Learn more<i></i></a>								</li>
+								</div>
+							</div>
+						</div>		
+								
+								</ul>
+								<div class="last">
+									<a href="#" class="button" style="text-align: center; padding-bottom: 20px; "> Work With US<i></i></a>
+								</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<div class="flat-divider d40px"></div>
+
+	<section id="OurTeam" class="flat-row about pad-top0px">
+		<div class="container">
+			<div class="row" style="height:auto;">
+				<div class="col-md-6">
+					<div class="image-single">
+						<img src="images/new/imagefront.png" alt="image">
+					</div>
+				</div><!-- /.col-md-6 -->
+				<div class="col-md-6">
+					<div class="about-right">
+						<h5 style="text-align: justify;">
+							At <b>GhBox</b>, we offer comprehensive digital advertising services tailored to meet our clients' unique needs. 
+							As a specialized agency, we help businesses reach their target audience, increase brand visibility,
+							 and drive results through various online channels. Our team of experts provides strategy development, campaign planning,
+							  SEM, social media advertising, display ads, remarketing, and analytics. Partnering with GhBox means gaining expertise, 
+							  saving time, targeting the right audience, measuring results, and enjoying flexibility.
+							 Choose GhBox for customized digital marketing strategies that yield tangible results.
+						</h5>
+					</div>
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+			<div class="flat-divider d50px"></div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="our-story">
+							<h4 class="title">At GhBox ;</h4>
+							<p class="content" style="text-align: justify;">
+								"We Dont Have To Be SMARTER Than THE REST; <br>We Have To Be More DISCIPLINED Than THE REST"
+								<br> Warren Buffett.
+							</p>
+						</div>
+						<div class="flat-divider d50px"></div>
+					</div><!-- /.col-md-2 -->
+				</div><!-- /.row -->
+			</div>
+		</div><!-- /.container -->
+	</section>
+
+	<section class="flat-row pad-bottom40px animated slideInRight" style="background-color: #260556;">
+		<div class="container">
+			<div class="row">
+				<div class="title-section">
+					<h2 class="title">&nbsp;&nbsp;&nbsp; Why choose us?..</h2>
+				</div><!-- /.title-section -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="flat-iconbox">
+					<div class="item">
+						<div class="iconbox ">
+							<div class="box-header">
+								<div class="box-icon"><i class="fa icons icon-diamond"></i></div>
+								<h5 class="box-title">Experienced</h5>
+								<p class="box-content">
+									We have expertise to deliver precisely on our promises.
+								</p>
+							</div>
+						</div>	
+					</div><!-- /.item -->
+					<div class="item">
+						<div class="iconbox ">
+							<div class="box-header">
+								<div class="box-icon"><i class="fa icons icon-chart"></i></div>
+								<h5 class="box-title">Superior Quality</h5>
+								<p class="box-content">
+									Quality is our hallmark. We provide our clients with quality works.
+								</p>
+							</div>
+						</div>
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div class="iconbox ">
+							<div class="box-header">
+								<div class="box-icon"><i class="fa icons icon-trophy"></i></div>
+								<h5 class="box-title">Honest &amp; Reliable</h5>
+								<p class="box-content">
+									We meet commitments and exceed expectations of our clients.
+								</p>
+							</div>
+						</div>
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div class="iconbox color">
+							<div class="box-header">
+								<div class="box-icon"><i class="fa icons icon-layers"></i></div>
+								<h5 class="box-title">In need of our Service or Support?</h5>
+								<div class="flat-button cl-white">
+									<a href="contact.html">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.item -->
+				</div><!-- /.iconbox -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<div class="flat-divider d40px"></div>
+
+	<section class="flat-row pad-bottom100px">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="main-text">
+						<h3 class="title">Strong Action Plans to create Wow Moments</h3>
+						<p> Our Digital Advertising team offers unparalleled expertise, targeted audience reach, 
+							creative campaigns, continuous optimization, multichannel management, transparent 
+							reporting, agility,and unwavering dedication to your success. 
+							Partner with our team to unlock the full potential of digital advertising and propel your business to new heights.
+						</p>
+					</div>
+
+					<div class="flat-divider d50px"></div>
+
+					<div class="flat-counter">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="counter">
+									<div class="counter-image"><i class="fa icons icon-layers"></i></div>
+									<div class="numb-count" data-to="100" data-speed="30" data-waypoint-active="yes">100+</div>
+									<div class="counter-title">
+										<strong>High-End</strong> Systems completed to meet our customer's Expectations.
+									</div>
+								</div>
+							</div><!-- /.col-md-4 -->
+							<div class="col-md-4">
+								<div class="counter">
+									<div class="counter-image"><i class="fa icons icon-clock"></i></div>
+									<div class="numb-count" data-to="2125" data-speed="30" data-waypoint-active="yes">2125</div>
+									<div class="counter-title">
+										<strong>Working Hours</strong> in the last year with passion to deliver quality services.
+									</div>
+								</div>
+							</div><!-- /.col-md-4 -->
+							<div class="col-md-4">
+								<div class="counter">
+									<div class="counter-image"><i class="fa icons icon-people"></i></div>
+									<div class="numb-count" data-to="15" data-speed="30" data-waypoint-active="yes">15+</div>
+									<div class="counter-title">
+										<strong>Members</strong> working tirelessly to deliver the best advertising solutions.
+									</div>
+								</div>
+							</div><!-- /.col-md-4 -->
+						</div><!-- /.row -->
+					</div>
+				</div><!-- /.col-md-6 -->
+
+				<div class="col-md-6">
+					<div class="quick-form" style="background-color:black; margin-top: 35px; height: 400px;">
+						<video width="100%" height="100%" controls autoplay loop>
+							<source src="/images/new/nt-animation.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+					</div>
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+		</div><!-- ./container -->
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-widgets">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="widget widget_text">
+							<h3 class="widget-title">About Us</h3>
+							<div class="textwidget">
+								<p>We believe that all those who come to us must be served with integrity. As such, our clients are assured of reliable services.</p>
+							</div>
+						</div>
+					</div><!-- /.col-md-3 -->
+
+					<div class="col-md-9">
+						<div class="widget widget_nav_menu">
+							<h3 class="widget-title">Services</h3>
+							<div class="menu-services-container">
+								<ul class="menu" style="float: left; margin: 10px;">
+									<li><a href="webapp.html">Branding</a></li>
+									<li><a href="mobileapp.html">Messaging Systems</a></li>
+								</ul>
+								<ul class="menu" style="float: left; margin: 10px;">
+									<li><a href="ai.html">Digital Advertising</a></li>
+									<li><a href="iot.html">Digital Marketting</a></li>
+								</ul>
+								<ul class="menu" style="float: left; margin: 10px;">
+									<li><a href="education.html">Education</a></li>
+								</ul>
+								<!-- <ul class="menu" style="float: left; margin: 10px;">
+									<li><a href="uxui.html">Photo Gallery</a></li>
+									<li><a href="digitalbranding.html">Digital Media</a></li>
+									<li><a href="cybersec.html">Cyber Security</a></li>
+								</ul> -->
+							</div>
+						</div><!-- /.widget_nav_menu -->
+					</div><!-- /.col-md-9 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.footer-widgets -->
+
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="social-links">
+							<a href="https://www.facebook.com/softnage" target="_blank">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="https://www.twitter.com/softnage" target="_blank">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/softnage" target="_blank">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="copyright">
+							<div class="copyright-content">
+								Copyright © 2022 GhBox
+							</div>
+						</div>
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.footer-content -->
+	</footer>
+
+	<!-- Go Top -->
+	<a class="go-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+	</div>
+
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.easing.js"></script>
+	<script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="javascript/owl.carousel.js"></script>
+	<script type="text/javascript" src="javascript/jquery-countTo.js"></script>
+	<script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+	<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+	<script type="text/javascript" src="javascript/jquery-validate.js"></script>
+	<script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="javascript/parallax.js"></script>
+	<script type="text/javascript" src="javascript/jquery.countdown.js"></script>
+	<script type="text/javascript" src="javascript/jquery.sticky.js"></script>
+	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+
+	<!-- Revolution Slider -->
+	<script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="javascript/slider.js"></script>
+	<script type='text/javascript'>
+		if (document.querySelectorAll('a[href^=\'#\']')) {
+			document.querySelectorAll('a[href^=\'#\']').forEach(anchor =>
+				anchor.addEventListener('click', e => {
+					e.preventDefault();
+					document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				}));
+		}
+	</script>
+
+
+
+	</body>
+</html>
