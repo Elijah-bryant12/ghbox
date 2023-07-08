@@ -1,0 +1,32 @@
+.Agency{
+    margin-top: 55px;
+background-position: top center;
+background-size: auto;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1640px;
+    position: relative;
+  }
+
+  .Agency .container .wrapper{
+    display: flex;
+max-width: 1460px;
+margin: 0 auto;
+padding-right: 100px;
+  }
+
+.Agency .wrapper .content{
+    flex: 1;
+
+}
+
+.Agency .wrapper .content{
+    box-sizing: border-box;
+padding-top: 26px;
+}
+      

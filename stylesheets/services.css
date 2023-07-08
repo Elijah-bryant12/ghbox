@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+  }
+  
+  .box {
+    width: 25%; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border: 1px solid black; /* Optional: Add borders or modify styling as desired */
+    box-sizing: border-box; /* Optional: Include padding and border in the box's total width */
+  }
+  
